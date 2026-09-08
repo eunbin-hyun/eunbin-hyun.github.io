@@ -32,10 +32,44 @@ const focus = [
 ];
 
 const skills = [
-  { title: 'Robotics · Embedded', description: '로봇 제어와 장치 간 통신', items: ['C++', 'ROS 2', 'Jetson', 'Raspberry Pi', 'UART'] },
-  { title: 'AI · Computer Vision', description: '모델 학습부터 엣지 배포까지', items: ['Python', 'PyTorch', 'YOLO', 'OpenCV', 'MediaPipe', 'ONNX', 'Hailo-8L'] },
-  { title: 'Simulation · 3D', description: '공정 시뮬레이션과 기구 설계', items: ['RoboDK', 'Onshape'] },
-  { title: 'Development · Analysis', description: '협업, 개발 환경과 데이터 분석', items: ['Git', 'Linux', 'Jira', 'MATLAB'] },
+  {
+    title: 'Robotics · Embedded', description: '로봇 제어와 장치 간 통신', tone: 'blue',
+    items: [
+      { name: 'C++', icon: 'https://cdn.simpleicons.org/cplusplus/00599C' },
+      { name: 'ROS 2', icon: 'https://cdn.simpleicons.org/ros/22314E' },
+      { name: 'NVIDIA Jetson', icon: 'https://cdn.simpleicons.org/nvidia/76B900' },
+      { name: 'Raspberry Pi', icon: 'https://cdn.simpleicons.org/raspberrypi/A22846' },
+      { name: 'UART', mark: '↔' },
+    ],
+  },
+  {
+    title: 'AI · Computer Vision', description: '모델 학습부터 엣지 배포까지', tone: 'coral',
+    items: [
+      { name: 'Python', icon: 'https://cdn.simpleicons.org/python/3776AB' },
+      { name: 'PyTorch', icon: 'https://cdn.simpleicons.org/pytorch/EE4C2C' },
+      { name: 'YOLO', mark: 'YO' },
+      { name: 'OpenCV', icon: 'https://cdn.simpleicons.org/opencv/5C3EE8' },
+      { name: 'MediaPipe', mark: 'MP' },
+      { name: 'ONNX', icon: 'https://cdn.simpleicons.org/onnx/005CED' },
+      { name: 'Hailo-8L', mark: 'H8' },
+    ],
+  },
+  {
+    title: 'Simulation · 3D', description: '공정 시뮬레이션과 기구 설계', tone: 'lime',
+    items: [
+      { name: 'RoboDK', mark: 'R' },
+      { name: 'Onshape', mark: 'O' },
+    ],
+  },
+  {
+    title: 'Development · Analysis', description: '협업, 개발 환경과 데이터 분석', tone: 'violet',
+    items: [
+      { name: 'Git', icon: 'https://cdn.simpleicons.org/git/F05032' },
+      { name: 'Linux', icon: 'https://cdn.simpleicons.org/linux/FCC624' },
+      { name: 'Jira', icon: 'https://cdn.simpleicons.org/jira/0052CC' },
+      { name: 'MATLAB', mark: 'M' },
+    ],
+  },
 ];
 
 const achievements = [
@@ -125,7 +159,7 @@ export default function Home() {
           </div>
         </div>
         <div className="stack-heading"><span>TECH STACK</span><p>프로젝트에서 직접 사용한 기술을 역할에 따라 구분했습니다.</p></div>
-        <div className="skills-grid">{skills.map((group) => <div className="skill-group" key={group.title}><p>{group.title}</p><small>{group.description}</small><div>{group.items.map((item) => <span key={item}>{item}</span>)}</div></div>)}</div>
+        <div className="skills-grid">{skills.map((group) => <div className={`skill-group skill-${group.tone}`} key={group.title}><p>{group.title}</p><small>{group.description}</small><div className="skill-icons">{group.items.map((item) => <div className="skill-icon" title={item.name} aria-label={item.name} key={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="stack-mark">{item.mark}</span>}</div>)}</div></div>)}</div>
       </section>
 
       <section className="recognition section-shell" id="outcomes">

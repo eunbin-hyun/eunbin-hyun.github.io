@@ -13,6 +13,25 @@
 @keyframes pulse{50%{transform:scale(.65);opacity:.45}}@keyframes panel-scan{0%,62%{transform:translateX(-120%)}82%,100%{transform:translateX(120%)}}@keyframes signal{50%{transform:scaleY(.52);opacity:.55}}@keyframes route-flow{to{stroke-dashoffset:-22}}@media(max-width:1050px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.site-header{grid-template-columns:1fr auto;padding:0 24px}.site-header nav{display:none}.hero{height:auto;max-height:none;min-height:0;grid-template-columns:1fr;padding-top:142px;padding-bottom:110px;gap:80px}.system-panel{width:min(560px,90vw);justify-self:center}.scroll-cue{display:none}.section-heading{grid-template-columns:1fr;gap:26px}.project-card{grid-template-columns:44px 1fr 44px}.project-detail{grid-column:2}.project-arrow{grid-column:3;grid-row:1}.focus-grid{grid-template-columns:1fr}.focus-card{min-height:280px}.focus-icon{margin-bottom:46px}.about-grid,.recognition-grid{grid-template-columns:1fr;gap:60px}}
 @media(max-width:600px){.section-shell{width:min(100% - 36px,1240px)}.hero h1{font-size:clamp(43px,13vw,62px)}.hero-description{font-size:16px}.desktop-break{display:none}.hero-actions{flex-direction:column;align-items:stretch}.system-panel{width:calc(100% - 10px);box-shadow:9px 9px 0 var(--blue)}.system-topline{align-items:flex-start;gap:10px}.system-topline strong{font-size:10px}.system-flow{grid-template-columns:1fr;gap:8px;padding:24px 18px}.system-flow>b{display:none}.system-node{display:grid;grid-template-columns:24px 1fr auto;align-items:center}.system-node strong{margin:0}.system-node small{text-align:right}.signal-view{height:62px}.section-heading h2,.about-intro h2,.recognition h2,.footer h2{font-size:38px}.work,.about{padding:100px 0}.focus-section{padding:100px 0}.project-card{min-height:0;grid-template-columns:30px 1fr 40px;gap:12px;padding:28px 0}.project-main h3{font-size:29px}.project-detail p{font-size:14px}.tags{margin-top:15px}.stack-heading{align-items:flex-start;flex-direction:column;gap:12px}.stack-heading p{text-align:left}.skills-grid{grid-template-columns:1fr}.recognition-list>div{grid-template-columns:46px 50px 1fr;gap:10px}.footer-title{align-items:flex-start;flex-direction:column}.footer-bottom{grid-template-columns:1fr;gap:10px;margin-top:80px}.footer-bottom small{justify-self:start}}
+
+/* Project colors stay distinct while preserving the soft pastel page tone. */
+.accent-blue{--accent:#dfe7ff}.accent-lime{--accent:#dff2e2}.accent-orange{--accent:#ffe4cc}.accent-purple{--accent:#ede0fb}
+.project-card:hover .tags span{background:color-mix(in srgb,#fff 62%,var(--accent));border-color:color-mix(in srgb,var(--ink) 18%,transparent)}
+
+/* Technology marks: logo-first, with labels available on hover for clarity. */
+.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:54px 72px;margin-top:36px}
+.skill-group{min-height:0;padding:0;background:transparent;border:0}
+.skill-group>p{margin:0 0 9px;font:900 clamp(18px,1.55vw,23px)/1.1 ui-sans-serif,system-ui,sans-serif;letter-spacing:-.045em;text-transform:none}
+.skill-group>small{min-height:0;margin-bottom:20px;font-size:13px}
+.skill-group>div.skill-icons{display:flex;flex-wrap:wrap;gap:12px;background:transparent;border:0}
+.skill-group:first-child,.skill-group:nth-child(2),.skill-group:nth-child(3),.skill-group:nth-child(4){border-top:0}
+.skill-icon{width:62px;height:62px;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);border-radius:50%;background:#fff;box-shadow:0 6px 16px color-mix(in srgb,var(--ink) 7%,transparent);transition:transform .2s ease,box-shadow .2s ease}
+.skill-icon:hover{transform:translateY(-4px) rotate(-3deg);box-shadow:0 12px 22px color-mix(in srgb,var(--ink) 13%,transparent)}
+.skill-icon img{width:33px;height:33px;object-fit:contain}
+.stack-mark{display:grid!important;place-items:center;width:34px!important;height:34px!important;padding:0!important;border:0!important;background:transparent!important;font-size:16px!important;font-weight:900!important;letter-spacing:-.08em}
+.skill-blue .skill-icon{border-color:#cbd8ff}.skill-coral .skill-icon{border-color:#ffd2ca}.skill-lime .skill-icon{border-color:#c7e8cb}.skill-violet .skill-icon{border-color:#dcccf3}
+.skill-blue .stack-mark{color:#4072bf}.skill-coral .stack-mark{color:#7963bb}.skill-lime .stack-mark{color:#69a641}.skill-violet .stack-mark{color:#d75c52}
+@media(max-width:600px){.skills-grid{grid-template-columns:1fr;gap:38px}.skill-icon{width:58px;height:58px}}
 /* Hero identity and kinetic 3D object */
 .hero{display:grid;grid-template-columns:1fr;place-items:center;text-align:center;overflow:hidden;isolation:isolate}
 .hero-copy{position:relative;z-index:2;width:min(980px,100%);display:flex;flex-direction:column;align-items:center}
