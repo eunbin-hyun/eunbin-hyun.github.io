@@ -162,7 +162,7 @@ export default function Home() {
       </section>
 
       <section className="about section-shell" id="about">
-        <div className="about-intro"><p className="eyebrow"><span /> ABOUT ME</p><h2>기술 사이의 빈틈을 메우는<br />로봇 개발자 <em>현은빈</em>입니다.</h2></div>
+        <div className="about-intro"><p className="eyebrow"><span /> ABOUT ME</p><h2>기술 사이의 빈틈을 메우며<br />로봇과 AI를 배우는 <em>현은빈</em>입니다.</h2></div>
         <div className="about-grid">
           <div className="about-copy"><p>전자공학 기반에서 출발해 Computer Vision, ROS 2, 임베디드 장치와 AI 모델을 실제 시스템으로 연결하고 있습니다.</p><p>센서 입력부터 추론, 통신, 제어까지 전체 흐름을 이해하고 문제의 원인을 단계별로 좁혀가는 개발을 좋아합니다.</p></div>
           <div className="education-list" aria-label="학력 및 교육">
