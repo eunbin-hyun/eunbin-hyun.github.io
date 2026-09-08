@@ -59,76 +59,29 @@ export default function Home() {
       </header>
 
       <section className="hero section-shell" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> ROBOTICS · PHYSICAL AI</p>
-          <h1>시각과 지능을<br /><em>움직임으로</em><br />연결합니다.</h1>
-          <p className="hero-description">전자공학을 바탕으로 로봇과 AI를 공부하는 현은빈입니다.<br className="desktop-break" /> 카메라가 본 장면이 실제 동작으로 이어지는 시스템을 만들고 있습니다.</p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="#work">프로젝트 보기 <span aria-hidden="true">↘</span></a>
-            <a className="button button-ghost" href="https://github.com/eunbin-hyun" target="_blank" rel="noreferrer"><span aria-hidden="true">●</span> GitHub</a>
+        <div className="kinetic-visual" aria-hidden="true">
+          <div className="kinetic-scene">
+            <div className="kinetic-orbit orbit-one"><i /></div>
+            <div className="kinetic-orbit orbit-two"><i /></div>
+            <div className="kinetic-cube">
+              <span className="cube-face cube-front" /><span className="cube-face cube-back" />
+              <span className="cube-face cube-right" /><span className="cube-face cube-left" />
+              <span className="cube-face cube-top" /><span className="cube-face cube-bottom" />
+            </div>
+            <div className="kinetic-core" />
           </div>
         </div>
 
-        <div className="pipeline-visual" aria-label="카메라 입력이 비전 인식과 엣지 연산을 거쳐 로봇 동작으로 이어지는 파이프라인">
-          <svg className="pipeline-map" viewBox="0 0 720 500" aria-labelledby="pipeline-title pipeline-description">
-            <title id="pipeline-title">Sense to action pipeline</title>
-            <desc id="pipeline-description">카메라가 장면을 감지하고, 비전 모델과 엣지 컴퓨터가 정보를 처리해 로봇의 동작으로 연결하는 과정</desc>
-            <defs>
-              <linearGradient id="flow-gradient" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stopColor="#9eacff" />
-                <stop offset="0.48" stopColor="#4264ff" />
-                <stop offset="1" stopColor="#172b8f" />
-              </linearGradient>
-              <filter id="signal-glow" x="-100%" y="-100%" width="300%" height="300%">
-                <feGaussianBlur stdDeviation="7" result="blur" />
-                <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-              </filter>
-              <path id="signal-path" d="M72 286 C145 176 212 177 280 254 S412 355 489 260 S604 155 668 222" />
-            </defs>
-
-            <path className="pipeline-halo" d="M72 286 C145 176 212 177 280 254 S412 355 489 260 S604 155 668 222" />
-            <path className="pipeline-route" d="M72 286 C145 176 212 177 280 254 S412 355 489 260 S604 155 668 222" />
-            <path className="pipeline-signal" d="M72 286 C145 176 212 177 280 254 S412 355 489 260 S604 155 668 222" />
-
-            <g className="pipeline-node node-sense" transform="translate(70 286)">
-              <circle r="36" />
-              <circle className="node-core" r="11" />
-              <path d="M-51-16l-30-22M-57 2h-35M-47 22l-26 28" />
-              <text x="-2" y="-67" textAnchor="middle">01 · SENSE</text>
-              <text className="node-detail" x="-2" y="70" textAnchor="middle">CAMERA INPUT</text>
-            </g>
-
-            <g className="vision-plane" transform="translate(230 150)">
-              <path d="M0 0l105 49-28 118-112-52z" />
-              <path className="vision-lane" d="M-6 103l35-42 25 51M39 124l24-38 21 47" />
-              <rect className="vision-target" x="34" y="45" width="30" height="35" rx="2" transform="rotate(25 49 62)" />
-              <text x="46" y="-18" textAnchor="middle">02 · PERCEIVE</text>
-              <text className="node-detail" x="46" y="185" textAnchor="middle">VISION MODEL</text>
-            </g>
-
-            <g className="compute-core" transform="translate(432 300)">
-              <rect x="-47" y="-47" width="94" height="94" rx="18" />
-              <path d="M-26-61v14M0-61v14M26-61v14M-26 47v14M0 47v14M26 47v14M-61-26h14M-61 0h14M-61 26h14M47-26h14M47 0h14M47 26h14" />
-              <path className="compute-wave" d="M-25 8l14-23L2 19l12-24 16 13" />
-              <text x="0" y="-78" textAnchor="middle">03 · COMPUTE</text>
-              <text className="node-detail" x="0" y="88" textAnchor="middle">EDGE AI</text>
-            </g>
-
-            <g className="robot-motion" transform="translate(636 216)">
-              <path className="robot-body" d="M-59 20l14-54h75l24 54z" />
-              <path d="M-26-34l9-27h28l12 27M-17-48h39" />
-              <circle cx="-31" cy="25" r="18" />
-              <circle cx="29" cy="25" r="18" />
-              <path className="motion-line" d="M-77 52h144M-88 68h114" />
-              <text x="-3" y="-94" textAnchor="middle">04 · ACT</text>
-              <text className="node-detail" x="-3" y="93" textAnchor="middle">ROBOT MOTION</text>
-            </g>
-
-            <circle className="flow-pulse pulse-one" r="7" filter="url(#signal-glow)"><animateMotion dur="5.2s" repeatCount="indefinite"><mpath href="#signal-path" /></animateMotion></circle>
-            <circle className="flow-pulse pulse-two" r="5" filter="url(#signal-glow)"><animateMotion dur="5.2s" begin="-2.6s" repeatCount="indefinite"><mpath href="#signal-path" /></animateMotion></circle>
-          </svg>
-          <div className="pipeline-status"><span><i /> LIVE SYSTEM FLOW</span><b>VISION → DECISION → MOTION</b></div>
+        <div className="hero-copy">
+          <p className="eyebrow"><span /> ROBOTICS · PHYSICAL AI</p>
+          <h1><span>EUNBIN HYUN</span><em>PORTFOLIO</em></h1>
+          <p className="hero-description">전자공학을 바탕으로 로봇과 AI를 공부하며,<br className="desktop-break" /> 시각 정보를 실제 움직임으로 연결하는 프로젝트를 만들고 있습니다.</p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#work">프로젝트 보기 <span aria-hidden="true">↘</span></a>
+            <a className="button button-ghost" href="https://github.com/eunbin-hyun" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
+
         <a className="scroll-cue" href="#work" aria-label="프로젝트로 이동"><span>SCROLL TO EXPLORE</span><b aria-hidden="true">↘</b></a>
       </section>
 
