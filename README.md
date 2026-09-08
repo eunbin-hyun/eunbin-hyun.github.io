@@ -1,6 +1,12 @@
 # Hyun Eunbin Portfolio
 
+<p align="center">
+  <a href="https://eunbin-hyun.github.io/"><strong>🌐 포트폴리오 웹사이트 바로 보기 →</strong></a>
+</p>
+
 현은빈의 Robotics · Physical AI 포트폴리오 웹사이트입니다.
+
+> GitHub 저장소는 사이트의 소스 코드입니다. 실제 웹사이트는 **[eunbin-hyun.github.io](https://eunbin-hyun.github.io/)** 에서 바로 확인할 수 있습니다.
 
 ## 주요 내용
 
