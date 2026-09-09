@@ -30,6 +30,7 @@
 .skill-icon:hover{transform:translateY(-4px) rotate(-3deg);box-shadow:0 12px 22px color-mix(in srgb,var(--ink) 13%,transparent)}
 .skill-icon img{width:33px;height:33px;object-fit:contain}
 .skill-icon img[src="/stack/mediapipe.png"]{position:absolute;top:2px;left:50%;width:100px;height:100px;max-width:none;object-fit:contain;clip-path:inset(0 0 42% 0);transform:translateX(-50%)}
+.skill-icon img[src^="https://hailo.ai/"]{width:48px;height:48px}
 .skill-label{display:block!important;min-height:0!important;margin:0!important;color:var(--ink)!important;font-size:10px!important;font-weight:800!important;line-height:1.15!important;letter-spacing:-.03em;text-align:center;word-break:keep-all}
 .stack-mark{display:grid!important;place-items:center;width:34px!important;height:34px!important;padding:0!important;border:0!important;background:transparent!important;font-size:16px!important;font-weight:900!important;letter-spacing:-.08em}
 .skill-blue .skill-icon{border-color:#cbd8ff}.skill-coral .skill-icon{border-color:#ffd2ca}.skill-lime .skill-icon{border-color:#c7e8cb}.skill-violet .skill-icon{border-color:#dcccf3}
