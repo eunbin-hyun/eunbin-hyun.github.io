@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="MediaPipe">
+  <g fill="#0098a9">
+    <rect x="26" y="25" width="31" height="65" rx="15.5"/>
+    <rect x="26" y="106" width="31" height="65" rx="15.5"/>
+    <rect x="69" y="25" width="31" height="108" rx="15.5"/>
+    <circle cx="84.5" cy="155.5" r="15.5"/>
+    <circle cx="126.5" cy="40.5" r="15.5"/>
+    <rect x="111" y="66" width="31" height="105" rx="15.5"/>
+    <rect x="153" y="25" width="31" height="146" rx="15.5"/>
+  </g>
+</svg>

@@ -49,7 +49,7 @@ const skills = [
       { name: 'PyTorch', icon: 'https://cdn.simpleicons.org/pytorch/EE4C2C' },
       { name: 'YOLO', icon: 'https://cdn.simpleicons.org/ultralytics/111F68' },
       { name: 'OpenCV', icon: '/stack/opencv.png' },
-      { name: 'MediaPipe', icon: '/stack/mediapipe.png' },
+      { name: 'MediaPipe', icon: '/stack/mediapipe-logo.svg' },
       { name: 'Roboflow', icon: 'https://cdn.simpleicons.org/roboflow/7B2BF9' },
       { name: 'ONNX', icon: 'https://cdn.simpleicons.org/onnx/005CED' },
     ],
