@@ -39,7 +39,7 @@ const skills = [
       { name: 'ROS 2', icon: 'https://cdn.simpleicons.org/ros/22314E' },
       { name: 'NVIDIA Jetson', icon: 'https://cdn.simpleicons.org/nvidia/76B900' },
       { name: 'Raspberry Pi', icon: 'https://cdn.simpleicons.org/raspberrypi/A22846' },
-      { name: 'UART', mark: '↔' },
+      { name: 'UART', icon: '/stack/uart.svg' },
     ],
   },
   {
@@ -49,16 +49,16 @@ const skills = [
       { name: 'PyTorch', icon: 'https://cdn.simpleicons.org/pytorch/EE4C2C' },
       { name: 'YOLO', icon: 'https://cdn.simpleicons.org/ultralytics/111F68' },
       { name: 'OpenCV', icon: 'https://cdn.simpleicons.org/opencv/5C3EE8' },
-      { name: 'MediaPipe', mark: 'MP' },
+      { name: 'MediaPipe', icon: '/stack/mediapipe.png' },
       { name: 'Roboflow', icon: 'https://cdn.simpleicons.org/roboflow/7B2BF9' },
       { name: 'ONNX', icon: 'https://cdn.simpleicons.org/onnx/005CED' },
-      { name: 'Hailo-8L', mark: 'H8' },
+      { name: 'Hailo-8L', icon: 'https://hailo.ai/wp-content/uploads/2023/08/Hailo.png' },
     ],
   },
   {
     title: 'Simulation · 3D', description: '공정 시뮬레이션과 기구 설계', tone: 'lime',
     items: [
-      { name: 'RoboDK', mark: 'R' },
+      { name: 'RoboDK', icon: 'https://cdn.robodk.com/assets/press/Logo/robodk-icon.svg' },
       { name: 'Onshape', icon: 'https://img.shields.io/badge/-8DC63F?style=flat&logo=onshape&logoColor=white' },
     ],
   },
