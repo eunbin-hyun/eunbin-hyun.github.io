@@ -159,7 +159,7 @@ export default function Home() {
           </div>
         </div>
         <div className="stack-heading"><span>TECH STACK</span><p>프로젝트에서 직접 사용한 기술을 역할에 따라 구분했습니다.</p></div>
-        <div className="skills-grid">{skills.map((group) => <div className={`skill-group skill-${group.tone}`} key={group.title}><p>{group.title}</p><small>{group.description}</small><div className="skill-icons">{group.items.map((item) => <div className="skill-item" key={item.name}><div className="skill-icon" title={item.name} aria-label={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="stack-mark">{item.mark}</span>}</div>{item.name !== 'MediaPipe' && <small className="skill-label">{item.name}</small>}</div>)}</div></div>)}</div>
+        <div className="skills-grid">{skills.map((group) => <div className={`skill-group skill-${group.tone}`} key={group.title}><p>{group.title}</p><small>{group.description}</small><div className="skill-icons">{group.items.map((item) => <div className="skill-item" key={item.name}><div className="skill-icon" title={item.name} aria-label={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="stack-mark">{item.mark}</span>}</div><small className="skill-label">{item.name}</small></div>)}</div></div>)}</div>
       </section>
 
       <section className="recognition section-shell" id="outcomes">
