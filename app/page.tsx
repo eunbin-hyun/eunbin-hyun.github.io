@@ -158,7 +158,7 @@ export default function Home() {
           <div className="education-list" aria-label="학력 및 교육">
             <div><span>2026</span><strong>삼성청년SW·AI아카데미</strong><small>SSAFY · Robotics Track</small></div>
             <div><span>2024</span><strong>Google Cloud 기반 AI 개발자 양성 과정</strong><small>352 hours · Team Project</small></div>
-            <div><span>2022–2026</span><strong>제주대학교 · 전자공학</strong><small>Electronics Engineering</small></div>
+            <div><span>2022–2025</span><strong>제주대학교 · 전자공학</strong><small>Electronics Engineering</small></div>
           </div>
         </div>
         <div className="stack-heading"><span>TECH STACK</span><p>프로젝트에서 직접 사용한 기술을 역할에 따라 구분했습니다.</p></div>
