@@ -47,8 +47,9 @@ const skills = [
     items: [
       { name: 'Python', icon: 'https://cdn.simpleicons.org/python/3776AB' },
       { name: 'PyTorch', icon: 'https://cdn.simpleicons.org/pytorch/EE4C2C' },
-      { name: 'YOLO · Ultralytics', icon: 'https://cdn.simpleicons.org/ultralytics/111F68' },
+      { name: 'YOLO', icon: 'https://cdn.simpleicons.org/ultralytics/111F68' },
       { name: 'OpenCV', icon: 'https://cdn.simpleicons.org/opencv/5C3EE8' },
+      { name: 'MediaPipe', mark: 'MP' },
       { name: 'Roboflow', icon: 'https://cdn.simpleicons.org/roboflow/7B2BF9' },
       { name: 'ONNX', icon: 'https://cdn.simpleicons.org/onnx/005CED' },
       { name: 'Hailo-8L', mark: 'H8' },
@@ -62,11 +63,8 @@ const skills = [
     ],
   },
   {
-    title: 'Web · Development', description: '프론트엔드, 협업 환경과 데이터 분석', tone: 'violet',
+    title: 'Development · Analysis', description: '협업, 개발 환경과 데이터 분석', tone: 'violet',
     items: [
-      { name: 'React', icon: 'https://cdn.simpleicons.org/react/61DAFB' },
-      { name: 'TypeScript', icon: 'https://cdn.simpleicons.org/typescript/3178C6' },
-      { name: 'Vite', icon: 'https://cdn.simpleicons.org/vite/646CFF' },
       { name: 'Git', icon: 'https://cdn.simpleicons.org/git/F05032' },
       { name: 'Linux', icon: 'https://cdn.simpleicons.org/linux/111111' },
       { name: 'Jira', icon: 'https://cdn.simpleicons.org/jira/0052CC' },
@@ -162,7 +160,7 @@ export default function Home() {
           </div>
         </div>
         <div className="stack-heading"><span>TECH STACK</span><p>프로젝트에서 직접 사용한 기술을 역할에 따라 구분했습니다.</p></div>
-        <div className="skills-grid">{skills.map((group) => <div className={`skill-group skill-${group.tone}`} key={group.title}><p>{group.title}</p><small>{group.description}</small><div className="skill-icons">{group.items.map((item) => <div className="skill-icon" title={item.name} aria-label={item.name} key={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="stack-mark">{item.mark}</span>}</div>)}</div></div>)}</div>
+        <div className="skills-grid">{skills.map((group) => <div className={`skill-group skill-${group.tone}`} key={group.title}><p>{group.title}</p><small>{group.description}</small><div className="skill-icons">{group.items.map((item) => <div className="skill-item" key={item.name}><div className="skill-icon" title={item.name} aria-label={item.name}>{item.icon ? <img src={item.icon} alt="" /> : <span className="stack-mark">{item.mark}</span>}</div><small className="skill-label">{item.name}</small></div>)}</div></div>)}</div>
       </section>
 
       <section className="recognition section-shell" id="outcomes">

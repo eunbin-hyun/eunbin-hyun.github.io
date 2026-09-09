@@ -23,15 +23,17 @@
 .skill-group{min-height:0;padding:0;background:transparent;border:0}
 .skill-group>p{margin:0 0 9px;font:900 clamp(18px,1.55vw,23px)/1.1 ui-sans-serif,system-ui,sans-serif;letter-spacing:-.045em;text-transform:none}
 .skill-group>small{min-height:0;margin-bottom:20px;font-size:13px}
-.skill-group>div.skill-icons{display:flex;flex-wrap:wrap;gap:12px;background:transparent;border:0}
+.skill-group>div.skill-icons{display:flex;flex-wrap:wrap;gap:18px 13px;background:transparent;border:0}
+.skill-item{width:62px;display:flex;flex-direction:column;align-items:center;gap:7px}
 .skill-group:first-child,.skill-group:nth-child(2),.skill-group:nth-child(3),.skill-group:nth-child(4){border-top:0}
 .skill-icon{width:62px;height:62px;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);border-radius:50%;background:#fff;box-shadow:0 6px 16px color-mix(in srgb,var(--ink) 7%,transparent);transition:transform .2s ease,box-shadow .2s ease}
 .skill-icon:hover{transform:translateY(-4px) rotate(-3deg);box-shadow:0 12px 22px color-mix(in srgb,var(--ink) 13%,transparent)}
 .skill-icon img{width:33px;height:33px;object-fit:contain}
+.skill-label{display:block!important;min-height:0!important;margin:0!important;color:var(--ink)!important;font-size:10px!important;font-weight:800!important;line-height:1.15!important;letter-spacing:-.03em;text-align:center;word-break:keep-all}
 .stack-mark{display:grid!important;place-items:center;width:34px!important;height:34px!important;padding:0!important;border:0!important;background:transparent!important;font-size:16px!important;font-weight:900!important;letter-spacing:-.08em}
 .skill-blue .skill-icon{border-color:#cbd8ff}.skill-coral .skill-icon{border-color:#ffd2ca}.skill-lime .skill-icon{border-color:#c7e8cb}.skill-violet .skill-icon{border-color:#dcccf3}
 .skill-blue .stack-mark{color:#4072bf}.skill-coral .stack-mark{color:#7963bb}.skill-lime .stack-mark{color:#69a641}.skill-violet .stack-mark{color:#d75c52}
-@media(max-width:600px){.skills-grid{grid-template-columns:1fr;gap:38px}.skill-icon{width:58px;height:58px}}
+@media(max-width:600px){.skills-grid{grid-template-columns:1fr;gap:38px}.skill-item{width:58px}.skill-icon{width:58px;height:58px}}
 /* Hero identity and kinetic 3D object */
 .hero{display:grid;grid-template-columns:1fr;place-items:center;text-align:center;overflow:hidden;isolation:isolate}
 .hero-copy{position:relative;z-index:2;width:min(980px,100%);display:flex;flex-direction:column;align-items:center}
