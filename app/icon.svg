@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <rect width="128" height="128" rx="30" fill="#f6f7fb"/>
-  <text x="7" y="79" fill="#16171c" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900" letter-spacing="-7">HYE</text>
-  <circle cx="102" cy="77" r="7" fill="#6175f4"/>
+  <path fill="#16171c" d="M11 33h9v20h9V33h9v58h-9V71h-9v20h-9Zm31 0h10l8 19 8-19h10L64.5 64v27h-9V64Zm40 0h26v9H91v14h15v9H91v17h17v9H82Z"/>
+  <circle cx="113" cy="86" r="5" fill="#6175f4"/>
 </svg>
